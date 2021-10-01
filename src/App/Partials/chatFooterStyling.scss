@@ -1,0 +1,49 @@
+
+.wrapper {
+        display: flex;
+        flex-direction: column;
+  }
+  
+  .input {
+    background-color: transparent;
+    border: none;
+    color: #555;
+    box-sizing: border-box;
+    font-family: 'Arvo';
+    font-size: 18px;
+    height: 40px;
+    left: 50%;
+    padding: 10px 0px;
+    top: 50%;
+    width: 100%;
+  
+    &:focus {
+      outline: none;    
+    }
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #AAA;
+  }
+  
+  input:focus::-webkit-input-placeholder {
+    color: dodgerblue;
+  }
+  
+  .input:focus+.underline {
+    transform: scale(1);
+  }
+  
+  .underline {
+    background-color: dodgerblue;
+    display: inline-block;
+    height: 2px;
+    left: 50px;
+    margin-top: -1px;
+    top: 185px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    width: 100%;
+  }
